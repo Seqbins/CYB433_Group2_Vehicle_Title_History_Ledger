@@ -1,0 +1,22 @@
+{
+  "name": "cyb433-group2-vehicle-history",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "hardhat test",
+    "coverage": "hardhat coverage",
+    "gas": "cross-env REPORT_GAS=true hardhat test",
+    "compile": "hardhat compile",
+    "gas:bench": "hardhat run scripts/gas-benchmark.js",
+    "deploy:sepolia": "hardhat run scripts/deploy.js --network sepolia",
+    "interact:sepolia": "hardhat run scripts/interact.js --network sepolia"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "cross-env": "^10.1.0",
+    "dotenv": "^18.0.10",
+    "hardhat": "^2.30.0"
+  },
+  "description": "CYB433 Group 2 - Vehicle Title & History Ledger (VehicleHistory.sol)",
+  "license": "MIT"
+}

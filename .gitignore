@@ -1,0 +1,12 @@
+node_modules
+.env
+.env.*
+!.env.example
+cache
+artifacts
+coverage
+coverage.json
+typechain-types
+crytic-export
+deployments/localhost.json
+deployments/hardhat.json
