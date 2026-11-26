@@ -1,0 +1,31 @@
+# slither . -- FINAL contract (after refactor) -- slither 0.11.6
+INFO:Detectors:
+Detector: timestamp
+VehicleHistory._updateMileage(VehicleHistory.Vehicle,uint256,uint32) (contracts/VehicleHistory.sol#247-260) uses timestamp for comparisons
+	Dangerous comparisons:
+	- newMileage - oldMileage > allowed (contracts/VehicleHistory.sol#252)
+VehicleHistory._checkActive(uint256) (contracts/VehicleHistory.sol#394-397) uses timestamp for comparisons
+	Dangerous comparisons:
+	- status != VehicleStatus.Active (contracts/VehicleHistory.sol#396)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#block-timestamp
+INFO:Slither:. analyzed (1 contracts with 102 detectors), 2 result(s) found
+
+# Severity summary (slither . --print human-summary)
+INFO:Printers:
+Compiled with Builder
+Total number of contracts in source files: 1
+Source lines of code (SLOC) in source files: 274
+Number of  assembly lines: 0
+Number of optimization issues: 0
+Number of informational issues: 0
+Number of low issues: 2
+Number of medium issues: 0
+Number of high issues: 0
+
+
++----------------+-------------+------+------------+--------------+----------+
+| Name           | # functions | ERCS | ERC20 info | Complex code | Features |
++----------------+-------------+------+------------+--------------+----------+
+| VehicleHistory | 22          |      |            | No           |          |
++----------------+-------------+------+------------+--------------+----------+
+INFO:Slither:. analyzed (1 contracts)
