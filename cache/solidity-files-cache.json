@@ -1,0 +1,41 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "C:\\Users\\c\\Desktop\\cyb433-group2-vehicle-history\\contracts\\VehicleHistory.sol": {
+      "lastModificationDate": 1795708097793,
+      "contentHash": "6242b206ae7e4b321865676cea61aba0",
+      "sourceName": "contracts/VehicleHistory.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.24"
+      ],
+      "artifacts": [
+        "VehicleHistory"
+      ]
+    }
+  }
+}
