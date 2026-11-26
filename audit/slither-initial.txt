@@ -1,0 +1,35 @@
+# slither . -- ORIGINAL group contract (before refactor) -- slither 0.11.6
+INFO:Detectors:
+Detector: solc-version
+Version constraint ^0.8.20 contains known severe issues (https://solidity.readthedocs.io/en/latest/bugs.html)
+	- VerbatimInvalidDeduplication
+	- FullInlinerNonExpressionSplitArgumentEvaluationOrder
+	- MissingSideEffectsOnSelectorAccess.
+It is used by:
+	- ^0.8.20 (contracts/VehicleHistory.sol#2)
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#incorrect-versions-of-solidity
+INFO:Detectors:
+Detector: immutable-states
+VehicleHistory.admin (contracts/VehicleHistory.sol#8) should be immutable 
+Reference: https://github.com/crytic/slither/wiki/Detector-Documentation#state-variables-that-could-be-declared-immutable
+INFO:Slither:. analyzed (1 contracts with 102 detectors), 2 result(s) found
+
+# Severity summary (slither . --print human-summary)
+INFO:Printers:
+Compiled with Builder
+Total number of contracts in source files: 1
+Source lines of code (SLOC) in source files: 248
+Number of  assembly lines: 0
+Number of optimization issues: 1
+Number of informational issues: 1
+Number of low issues: 0
+Number of medium issues: 0
+Number of high issues: 0
+
+
++----------------+-------------+------+------------+--------------+----------+
+| Name           | # functions | ERCS | ERC20 info | Complex code | Features |
++----------------+-------------+------+------------+--------------+----------+
+| VehicleHistory | 15          |      |            | No           |          |
++----------------+-------------+------+------------+--------------+----------+
+INFO:Slither:. analyzed (1 contracts)
